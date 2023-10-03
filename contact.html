@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harmony of Hearts | Contact</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Linking the external CSS file -->
+    <style>
+        main {
+            padding: 180px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        input[type="submit"] {
+            width: auto;
+            background-color: #333;
+            color: #FFF;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+
+        @media (max-width: 768px) {
+            main {
+        padding-top: 60px;  /* Adjust based on the header's height on smaller screens */
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1><a href="Project1.html" class="header-link">Harmony of Hearts</a></h1>
+        <nav>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="songs.html">Song Lists</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">Cell Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="4" required></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+
+    <footer>
+        <!-- Optional footer content can go here -->
+    </footer>
+</body>
+
+</html>
